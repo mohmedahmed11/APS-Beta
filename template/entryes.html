@@ -1,0 +1,192 @@
+
+<div class="container">
+    <div class="row">
+        <!-- <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12" >
+                            <div class="list-group list-group-flush" id="MainList">
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="col-md-12">
+            <center>
+                <form id="myForm">
+                    <div class="form-group row">
+                        <div class="col-sm-6" >
+                            <!-- <label for="inputName" class="col-sm-12 col-form-label"> Primary name</label> -->
+                            <div class="col-sm-12" style="padding: 0;">
+                                <input type="text" class="form-control" name="narration" id="inputName" placeholder=" Naration " required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6" >
+                            <!-- <label for="inputName" class="col-sm-12 col-form-label"> Primary name</label> -->
+                            <div class="col-sm-12" style="padding: 0;">
+                                <input type="date" class="form-control" name="date" id="inputName" placeholder="Date" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="form-group row">
+                        <div class=" col-sm-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="form-group row" style="margin: 0;">
+                                        <div class="col-sm-2" style="padding: 0;">
+                                            <!-- <label for="inputName" class="col-sm-12 col-form-label"> Primary name</label> -->
+                                            <div class="col-sm-12" >
+                                                <select class="form-control" name="ACCTYPE" id="acctype">
+                                                    <option value="DR"> Dr </option>
+                                                    <option value="CR"> Cr </option>
+                                                </select>
+                                                <!-- <input type="text" class="form-control" name="ACCNO" id="Ledger" placeholder=" Ledger " required> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6" style="padding: 0;">
+                                            <!-- <label for="inputName" class="col-sm-12 col-form-label"> Primary name</label> -->
+                                            <div class="col-sm-12" >
+                                                <select class="form-control" name="ACCNO" id="ledgerList">
+                                                    <option>item 1</option>
+                                                    <option>item 2</option>
+                                                    <option>item 3</option>
+                                                </select>
+                                                <!-- <input type="text" class="form-control" name="ACCNO" id="Ledger" placeholder=" Ledger " required> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4" style="padding: 0;">
+                                            <!-- <label for="inputName" class="col-sm-12 col-form-label"> Primary name</label> -->
+                                            <div class="col-sm-12" >
+                                                <input type="text" class="form-control" name="enVal" id="ENVal" placeholder=" Entry Value " >
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <br>
+                                    <!-- </div>
+
+                                    <div class="form-group row" > -->
+                                        <div class="col-sm-6 offset-2" style="padding: 0;">
+                                            <!-- <label for="inputName" class="col-sm-12 col-form-label"> Primary name</label> -->
+                                            <div class="col-sm-12" >
+                                                <select class="form-control" name="currency" id="currencyList">
+                                                    <option>item 1</option>
+                                                    <option>item 2</option>
+                                                    <option>item 3</option>
+                                                </select>
+                                                <!-- <input type="text" class="form-control" name="currency" id="inputName" placeholder=" Currency " required> -->
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4" style="padding: 0;">
+                                            <!-- <label for="inputName" class="col-sm-12 col-form-label"> Primary name</label> -->
+                                            <div class="col-sm-12" >
+                                                <input type="text" class="form-control" name="rate" id="currencyRate" placeholder=" Rate " >
+                                            </div>
+                                        </div>
+                                        
+                                        <br>
+                                        <br>
+                                        <div class="col-sm-12" style="padding: 0;" >
+                                            <!-- <label for="inputName" class="col-sm-12 col-form-label"> Primary name</label> -->
+                                            <div class="col-sm-12">
+                                                <button type="button" id="addNewItemToEntry" class="btn btn-info" style=" height: 34px; padding-top: 7px;">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body" >
+                                    <div class="row">
+                                        <div class="col-sm-12" >
+                                            <!-- <p>new entry Details submited now</p> -->
+                                            <div class="list-group list-group-flush" id="newEntryItemsView">
+                                                <a href="#" class="list-group-item list-group-item-action ">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <p style="width: 30%; text-align: left;"> Ledger </p>
+                                                        <p style="width: 15%;"> Debit </p> 
+                                                        <p style="width: 15%;"> Credit </p> 
+                                                        <p style="width: 30%;"> Currency </p>
+                                                        <p style="width: 10%;"> ... </p>
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action ">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <p style="width: 30%; text-align: left;"> Ledger 1 </p>
+                                                        <p style="width: 15%;"> 100 </p> 
+                                                        <p style="width: 15%;"> 0 </p> 
+                                                        <p style="width: 30%;"> SDG - 1.0 </p>
+                                                        <p style="width: 10%;">
+                                                            <button style="padding: 0px;" class="btn editItemNow" val=""><i class="fas fa-edit  fa-2X edit"></i></button> &nbsp; 
+                                                            <button style="padding: 0px;" class="btn deleteItemNow" val=""><i class="fas fa-trash fa-2X trash" ></i></button>
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                        <div class="d-flex w-100 justify-content-between">
+                                                                <p style="width: 30%; text-align: left;"> Ledger 2 </p>
+                                                                <p style="width: 15%;"> 0 </p> 
+                                                                <p style="width: 15%;"> 100 </p> 
+                                                                <p style="width: 30%;"> SDG - 1.0 </p>
+                                                                <p style="width: 10%;">
+                                                                    <button style="padding: 0px;" class="btn editItemNow" val=""><i class="fas fa-edit  fa-2X edit"></i></button> &nbsp; 
+                                                                    <button style="padding: 0px;" class="btn deleteItemNow" val=""><i class="fas fa-trash fa-2X trash" ></i></button>
+                                                                </p>
+                                                            </div>
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <div class="d-flex w-100 justify-content-between">
+                                                        <p style="width: 30%; text-align: left;"> Ledger 3 </p>
+                                                        <p style="width: 15%;"> 0 </p> 
+                                                        <p style="width: 15%;"> 10 </p> 
+                                                        <p style="width: 30%;"> SDG - 1.0 </p>
+                                                        <p style="width: 10%;">
+                                                            <button style="padding: 0px;" class="btn editItemNow" val=""><i class="fas fa-edit  fa-2X edit"></i></button> &nbsp; 
+                                                            <button style="padding: 0px;" class="btn deleteItemNow" val=""><i class="fas fa-trash fa-2X trash" ></i></button>
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                                </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="form-group row" style="margin: 0;">
+                                        <!-- <div class="col-sm-6" style="padding: 0;"> -->
+                                            <label for="TotalDebit" class="col-sm-3 col-form-label"> Total Debit : </label>
+                                            <div class="col-sm-3" >
+                                                <input type="text" class="form-control" name="TotalDebit" value="" id="TotalDebit" placeholder=" Total Debit " disabled>
+                                                <input type="hidden" class="form-control" name="total_Dr" value="" id="TotalDebit1" placeholder=" Total Debit " disabled>
+                                            </div>
+                                        <!-- </div> -->
+                                        <!-- <div class="col-sm-6" style="padding: 0;"> -->
+                                            <label for="TotalCredit" class="col-sm-3 col-form-label"> Total Credit: </label>
+                                            <div class="col-sm-3" >
+                                                <input type="text" class="form-control" name="TotalCredit" value="" id="TotalCredit" placeholder=" Total Credit " disabled>
+                                                <input type="hidden" class="form-control" name="total_Cr" value="" id="TotalCredit1" placeholder=" Total Credit " disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="form-group row">
+                        <div class=" col-sm-12">
+                            <button type="submit" id="submitData" class="btn btn-primary" style=" height: 34px; padding-top: 7px;"> Save </button>
+                        </div>
+                    </div>
+
+                    <input type="hidden" id="actionType" name="actionType" value="post">
+                    <input type="hidden" id="editId" name="editId" value="">
+                </form>
+            </center>
+        </div>
+    </div>
+</div>
+
+

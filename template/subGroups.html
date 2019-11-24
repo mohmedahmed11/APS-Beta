@@ -1,0 +1,52 @@
+
+<div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-12" >
+                                <!-- <p>new entry Details submited now</p> -->
+                                <div class="list-group list-group-flush" id="MainList">
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <center>
+                    <form id="myForm">
+                        <div class="form-group row">
+                            <label for="MainSelects" class="col-sm-12 col-form-label">  Group Name </label>
+                            <div class="col-sm-12">
+                                <select class="form-control" name="groups_id" id="MainSelects">
+                                    <option>item 1</option>
+                                    <option>item 2</option>
+                                    <option>item 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputName" class="col-sm-12 col-form-label"> Sub Group Name</label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" name="name" id="inputName" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class=" col-sm-12">
+                                <button type="submit" id="submitData" class="btn btn-primary" style=" height: 34px; padding-top: 7px;">Submit</button>
+                            </div>
+                        </div>
+    
+                        <input type="hidden" id="actionType" name="actionType" value="post">
+                        <input type="hidden" id="editId" name="editId" value="">
+                    </form>
+                </center>
+            </div>
+        </div>
+    </div>
+        
+    

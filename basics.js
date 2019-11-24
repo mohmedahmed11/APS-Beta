@@ -1,0 +1,1 @@
+exports.baseUrl = 'http://192.168.8.13:9000/api/'

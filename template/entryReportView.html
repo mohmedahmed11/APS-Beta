@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <link href="../node_modules/fontawesome/css/all.css" rel="stylesheet">
+    <link href="../style/main.css" rel="stylesheet">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <title>APS Reports</title>
+</head>
+<body>
+
+<br>
+<br>
+<br>
+
+<div id="Content-to-print" style="font-family: Tajawal;">
+<div class="container" style="
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;">
+    <div class="row" style="display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;">
+        <div class="col-md-12" style="flex: 0 0 100%;
+        max-width: 100%;
+    ">
+            <div class="card" style="position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: .25rem;">
+                <div class="card-body" style="flex: 1 1 auto;
+                padding: 1.25rem;">
+                    <div class="row" style="    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    margin-right: -15px;
+                    margin-left: -15px;">
+                        <div class="col-sm-12" style="flex: 0 0 100%;
+                        max-width: 100%;">
+                            <!-- <p>new entry Details submited now</p> -->
+                            <div class="list-group list-group-flush" id="MainList" style="display: -ms-flexbox;
+                            display: flex;
+                            -ms-flex-direction: column;
+                            flex-direction: column;
+                            padding-left: 0;
+                            margin-bottom: 0;">
+                                <div class="d-flex w-100 justify-content-between " style="    width: 100%!important;justify-content: space-between!important;display: flex!important;">
+                                    <h5 class="mb-1" id="title-view-id" style="width: 5%; margin-bottom: .25rem!important;
+                                font-size: 1.25rem;     margin-top: 0;"></h5>
+                                    <h5 class="mb-1" id="title-view" style="width: 50%;margin-bottom: .25rem!important;
+                                    font-size: 1.25rem;     margin-top: 0;"></h5>
+                                    <h5 class="mb-1" id="title-sapse" style="width: 20%;margin-bottom: .25rem!important;
+                                    font-size: 1.25rem;     margin-top: 0;"></h5>
+                                    <small id="title-view-date" style="font-size: 80%;
+                                    font-weight: 400;"></small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+     
+</div>
+<div id="editor"></div>
+<footer style="
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    float: right;
+">
+    <button class="btn btn-link" type="button" id="print-pdf"><i class="fa fa-print fa-2x" aria-hidden="true"></i></button>
+</footer>
+</body>
+</html>
+
+
+
+<script>
+
+    require("../reportRenderer.js")
+    
+</script>
